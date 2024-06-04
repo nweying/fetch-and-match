@@ -1,0 +1,67 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+	background: #faf0d7;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.homeScreen{
+	position: relative;
+	margin: 10% auto;
+}
+
+.howToPlayScreen, .gameScreen{
+	position: relative;
+	display: none;
+}
+
+.header{
+	text-align: center;
+}
+
+.header h1{
+	font-family: Lobster;
+	font-size: 100px;
+}
+
+.gameScreen .header h1{
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.newGameBtn, .howToPlayBtn, .goBackToHomeBtn{
+	font-family: GoodDog;
+	color: #000;
+	background: #8cc0de;
+	border: none;
+	width: 250px;
+	border-radius: 5px;
+	padding: 5px 10px;
+	font-size: 50px;
+	cursor: pointer;
+}
+
+.newGameBtn:hover, .howToPlayBtn:hover, .goBackToHomeBtn:hover{
+	background: #f4bfbf;
+}
+
+.playgame{
+	text-align: center;
+	width: 100%;
+	margin: 100px auto;
+}
+
+.howtoplayheading{
+	font-size: 30px;
+	font-family: GoodDog;
+	font-weight: bold;
+}
+
+.howtoplay p{
+	font-family: GoodDog;
+	font-size: 26px;
+}

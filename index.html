@@ -3,10 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<link href="https://fonts.cdnfonts.com/css/gooddog-2" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <title>Fetch & Match</title>
 </head>
 <body>
-    
+    <div class="container">
+		<div class="row">
+			<div class="col-12 col-sm-12">
+				<div class="homeScreen" id="homeScreen">
+					<div class="header">
+						<h1>Fetch & Match</h1>
+					</div>			
+					<div class="playgame">
+						<button id="newGameBtn" class="newGameBtn mt-2 mb-2">New Game</button>
+						<button id="howToPlayBtn" class="howToPlayBtn mt-2 mb-2">How to Play</button>
+					</div>
+
+                    <div class="howToPlayScreen mt-5 mb-5" id="howToPlayScreen">
+                        <div class="header">
+                            <h1 class="mb-5">Fetch & Match</h1>
+                        </div>
+                        <div id="howtoplay" class="howtoplay text-center">
+                            <div class="howtoplayheading textCenter">HOW TO PLAY</div>
+                            <p>Clicks on any two cards.If the cards are same, it will remains unflipped.<br>If the cards are different, it will be flipped back. <br>You will win when you matched all the same pairs.</p>
+                            <img src="images/how-to-play.gif" width="500px;"><br>
+                            <button id="goBackToHomeBtn" class="goBackToHomeBtn">Go Back Home</button>
+                        </div>
+                    </div>
+				</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
