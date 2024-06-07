@@ -74,7 +74,7 @@ function showDog(cid){
 				{
 					clearInterval(timer); // Clear the timer countdown
 					setTimeout(function(){
-						//If all images are match
+						$("#winner").css("display","block"); // Display the winner popup message
 					},800);
 				}
 				setTimeout(function(){
