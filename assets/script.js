@@ -139,3 +139,14 @@ function playAgain(){
 	// Set all dogs images array
 	allDogs = ["dog1","dog2","dog3","dog4","dog5","dog6","dog7","dog8"];
 }
+
+// Restart the game
+function restartGame(){
+	// Set variables to its default values
+	matchedPair = 0, totalSeconds = 0, clickedDogs = [], clickedDogsID = [];
+	clearInterval(timer); // Clear the timer countdown
+	$("#seconds").text("00"); // Display the timer to 0
+	allDogs = ["dog1","dog2","dog3","dog4","dog5","dog6","dog7","dog8"];
+	setDogs(); // Set all dogs image again
+	timer = setInterval(setTime,1000); // Start the timer countdown
+}
