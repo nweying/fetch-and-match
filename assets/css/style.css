@@ -136,6 +136,29 @@ body{
 	cursor: pointer;
 }
 
+#winner{
+	display: none;
+}
+
+.winner{
+	font-family: GoodDog;
+	width: 90vw;
+	max-width: 400px;
+	box-shadow: 0 4px 23px #0003;
+	padding: 15px 15px;
+	border-radius: 5px;
+	background: #ffd9c0;
+	color: #000;
+	position: absolute;
+	pointer-events: auto;
+	text-align: center;
+	top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+	transform: translateY(-50%);
+}
+
 .cardFront,.cardBack{
 	box-sizing: border-box;
 	border-radius: 0.25rem;
