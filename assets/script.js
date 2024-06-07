@@ -23,6 +23,12 @@ $(document).ready(function(){
 		$("#homeScreen").css("display","grid"); // Display home screen
 		playAgain(); // Set all the variables and arrays as default declared
 	});
+	// When click on END GAME button
+	$(endGameBtn).click(function(){
+		$("#gameScreen").css("display","none"); // Hide the game screen
+		$("#homeScreen").css("display","grid"); // Display the home screen
+		playAgain(); // Set all the variables and arrays as default declared
+	});
 });
 
 // Declare default variables and arrays
