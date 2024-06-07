@@ -65,3 +65,74 @@ body{
 	font-family: GoodDog;
 	font-size: 26px;
 }
+
+#timerrestartendgame{
+	width: 530px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.timer{
+	font-family: GoodDog;
+	font-size: 30px;
+	background: #8cc0de;
+	border-radius: 5px;
+	padding: 5px 5px;
+	width: 125px;
+	display: inline-block;
+	color: #000;
+	margin: 0 2px;
+}
+
+.restart, .endgame{
+	font-family: GoodDog;
+	font-size: 30px;
+	cursor: pointer;
+	background: #8cc0de;
+	border-radius: 5px;
+	padding: 5px 5px;
+	width: 125px;
+	display: inline-block;
+	color: #000;
+	margin: 0 2px;
+}
+
+
+#game{
+	display: grid;
+	width: 470px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.gamegrid .card{
+	margin: 5px;
+	height: 100px;
+	width: 100px;
+	float: left;
+	cursor: pointer;
+	border-radius: 0.25rem;
+}
+
+.gamegrid .cardFront, .gamegrid .cardBack{
+	width: 100px;
+	height: 100px;
+}
+
+
+.playAgainBtn{
+	color: #000;
+	background: #8cc0de;
+	border-radius: 5px;
+	padding: 8px;
+	height: 36px;
+	font-weight: bold;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.playAgainBtn:hover{
+	color: #000;
+	background: #faf0dc;
+	cursor: pointer;
+}
