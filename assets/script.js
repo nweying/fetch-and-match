@@ -16,6 +16,13 @@ $(document).ready(function(){
 		setDogs(); // Set all the dog's images
 		timer = setInterval(setTime,1000); // Start the timer
 	});
+	// When click on PLAY AGAIN button
+	$(playAgainBtn).click(function(){
+		$("#winner").css("display","none"); // Hide winner message popup
+		$("#gameScreen").css("display","none"); // Hide game screen
+		$("#homeScreen").css("display","grid"); // Display home screen
+		playAgain(); // Set all the variables and arrays as default declared
+	});
 });
 
 // Declare default variables and arrays
