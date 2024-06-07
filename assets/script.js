@@ -51,3 +51,68 @@ function setDogs(){
 	alldogs(); // Set click events on each dogs images box grid
 }
 
+// Show the dogs image
+function showDog(cid){
+	// Check if dogs images clicked 2nd time
+	if(clickedDogs.length != 2)
+	{
+		let clickedID = cid.match(/\d+/)[0]; // Get the ID of the clicked dog image
+		clickedDogsID.push(clickedID); // Push this ID into an array
+		$("#front"+clickedID).toggleClass("flipped"); // Front side flipped
+		$("#back"+clickedID).toggleClass("flipped"); // Back side flipped
+		$("#"+cid).css("pointer-events","none"); // Remove the click event from clicked dog image
+		// Get thg name of clicked dogs image
+		let dogName = document.querySelector("#back"+clickedID+" > img").src.split("/").pop().split(".")[0];
+		clickedDogs.push(dogName); // Push the dogs image name into an array of clicked dogs
+		if(clickedDogs.length == 2) // Check if clickedDogs array length is equal to 2
+		{
+			// Check and compare 1st and 2nd dogs image names
+			if(clickedDogs[0] == clickedDogs[1])
+			{
+				matchedPair++; // Increase total matched pair
+				if(matchedPair == 8) // Check total matched pair is 8?
+				{
+					clearInterval(timer); // Clear the timer countdown
+					setTimeout(function(){
+						//If all images are match
+					},800);
+				}
+				setTimeout(function(){
+					// Set new background color of the matched dogs images
+					$("#back"+clickedDogsID[0]).css("background-color","#76db57");
+					$("#back"+clickedDogsID[1]).css("background-color","#76db57");
+					clickedDogs = []; // Empty the clicked dogs image array
+					clickedDogsID = []; // Empty the clicked dogs ID array
+				},500);
+			}
+			else // If both dogs image are not matched
+			{
+				setTimeout(function(){
+					// Enable the click events on both dogs images
+					$("#card"+clickedDogsID[0]).css("pointer-events","auto");
+					$("#card"+clickedDogsID[1]).css("pointer-events","auto");
+					// Flip the front and back side of both clicked dogs image box
+					$("#front"+clickedDogsID[0]).removeClass("flipped");
+					$("#back"+clickedDogsID[0]).removeClass("flipped");
+					$("#front"+clickedDogsID[1]).removeClass("flipped");
+					$("#back"+clickedDogsID[1]).removeClass("flipped");
+					clickedDogs = []; // Empty the clicked dogs image array
+					clickedDogsID = []; // Empty the clicked dogs ID array
+				},800);
+			}
+		}
+	}
+}
+
+
+// Set click event on every Dog's image
+function alldogs(){
+	let allCards = document.querySelectorAll(".card"); // Get all dogs images
+	for(let c = 0; c < allCards.length; c++)
+	{
+		// Set click event on each dogs image and it will show you the hidden image
+		allCards[c].addEventListener('click', function(){
+			showDog(this.id);
+		});
+	}
+}
