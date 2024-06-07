@@ -119,7 +119,6 @@ body{
 	height: 100px;
 }
 
-
 .playAgainBtn{
 	color: #000;
 	background: #8cc0de;
@@ -136,3 +135,26 @@ body{
 	background: #faf0dc;
 	cursor: pointer;
 }
+
+.cardFront,.cardBack{
+	box-sizing: border-box;
+	border-radius: 0.25rem;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);	
+	position: absolute;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	background-color: #f4bfbf;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.cardFront{
+	font-weight: bold;
+	font-size: 40px;
+	
+}
+
+
