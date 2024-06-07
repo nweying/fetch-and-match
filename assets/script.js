@@ -127,3 +127,15 @@ function setTime(){
 	else
 		$("#seconds").text(totalSeconds); // Display seconds without trailing 0
 }
+
+// Play again
+function playAgain(){
+	$("#gameScreen").css("display","none"); // Hide the game screen
+	$("#homeScreen").css("display","grid"); // Display the home screen
+	// Set variables to their default values
+	matchedPair = 0, totalSeconds = 0, currentGame = "", clickedDogs = [], clickedDogsID = [];
+	clearInterval(timer);
+	$("#seconds").text("00"); // Display the timer to 00
+	// Set all dogs images array
+	allDogs = ["dog1","dog2","dog3","dog4","dog5","dog6","dog7","dog8"];
+}
