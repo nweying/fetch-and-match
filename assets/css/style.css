@@ -156,5 +156,12 @@ body{
 	font-size: 40px;
 }
 
+.cardBack.flipped{
+	background: #42BAFB;
+	
+}
 
+.cardFront.flipped{
+	transform: perspective(1000px) rotateY(-180deg);
+}
 
