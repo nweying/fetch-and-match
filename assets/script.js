@@ -29,6 +29,10 @@ $(document).ready(function(){
 		$("#homeScreen").css("display","grid"); // Display the home screen
 		playAgain(); // Set all the variables and arrays as default declared
 	});
+	// When click on RESTART button
+	$(restartGameBtn).click(function(){
+		restartGame();
+	});
 });
 
 // Declare default variables and arrays
