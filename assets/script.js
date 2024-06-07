@@ -14,6 +14,7 @@ $(document).ready(function(){
 		$("#homeScreen").css("display","none"); // Hide the home screen
 		$("#gameScreen").css("display","block"); // Display the game screen
 		setDogs(); // Set all the dog's images
+		timer = setInterval(setTime,1000); // Start the timer
 	});
 });
 
@@ -115,4 +116,14 @@ function alldogs(){
 			showDog(this.id);
 		});
 	}
+}
+
+// Timer countdown
+function setTime(){
+	++totalSeconds; // Increase one second
+	// Check if total seconds less than 10, then add trailing 0 to the seconds else not
+	if(totalSeconds < 10)
+		$("#seconds").text("0"+totalSeconds); // Add trailing 0 to the seconds
+	else
+		$("#seconds").text(totalSeconds); // Display seconds without trailing 0
 }
