@@ -58,7 +58,7 @@ function setDogs(){
 			// Generate one random dog image from an array of dogs images
 			let randomDog = allDogs.splice(allDogs.length * Math.random() | 0, 1)[0];
 			// Set the HTML div block for each dogs image
-			gameCards += '<div class="card col-3" id="card'+i+j+'"><div id="back'+i+j+'" class="cardBack"><img src="/assets/images/'+randomDog+'.jpeg" width="90" height="90"></div><div id="front'+i+j+'" class="cardFront">&#128054;</div></div>';
+			gameCards += '<div class="card col-3" id="card'+i+j+'"><div id="back'+i+j+'" class="cardBack"><img src="assets/images/'+randomDog+'.jpeg" width="90" height="90"></div><div id="front'+i+j+'" class="cardFront">&#128054;</div></div>';
 			// Reset all dogs images array again once it becomes empty
 			if(allDogs.length == 0)
 				allDogs = ["dog1","dog2","dog3","dog4","dog5","dog6","dog7","dog8"];

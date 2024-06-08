@@ -2,38 +2,38 @@
 	box-sizing: border-box;
 }
 
-body{
+body {
 	padding: 0;
 	margin: 0;
 	background: #faf0d7;
 	font-family: Helvetica, Arial, sans-serif;
 }
 
-.homeScreen{
+.homeScreen {
 	position: relative;
 	margin: 10% auto;
 }
 
-.howToPlayScreen, .gameScreen{
+.howToPlayScreen, .gameScreen {
 	position: relative;
 	display: none;
 }
 
-.header{
+.header {
 	text-align: center;
 }
 
-.header h1{
+.header h1 {
 	font-family: Lobster;
 	font-size: 100px;
 }
 
-.gameScreen .header h1{
+.gameScreen .header h1 {
 	margin-top: 0;
 	margin-bottom: 20px;
 }
 
-.newGameBtn, .howToPlayBtn, .goBackToHomeBtn{
+.newGameBtn, .howToPlayBtn, .goBackToHomeBtn {
 	font-family: GoodDog;
 	color: #000;
 	background: #8cc0de;
@@ -45,34 +45,34 @@ body{
 	cursor: pointer;
 }
 
-.newGameBtn:hover, .howToPlayBtn:hover, .goBackToHomeBtn:hover{
+.newGameBtn:hover, .howToPlayBtn:hover, .goBackToHomeBtn:hover {
 	background: #f4bfbf;
 }
 
-.playgame{
+.playgame {
 	text-align: center;
 	width: 100%;
 	margin: 100px auto;
 }
 
-.howtoplayheading{
+.howtoplayheading {
 	font-size: 30px;
 	font-family: GoodDog;
 	font-weight: bold;
 }
 
-.howtoplay p{
+.howtoplay p {
 	font-family: GoodDog;
 	font-size: 26px;
 }
 
-#timerrestartendgame{
+#timerrestartendgame {
 	width: 530px;
 	margin: 0 auto;
 	text-align: center;
 }
 
-.timer{
+.timer {
 	font-family: GoodDog;
 	font-size: 30px;
 	background: #8cc0de;
@@ -84,7 +84,7 @@ body{
 	margin: 0 2px;
 }
 
-.restart, .endgame{
+.restart, .endgame {
 	font-family: GoodDog;
 	font-size: 30px;
 	cursor: pointer;
@@ -98,14 +98,14 @@ body{
 }
 
 
-#game{
+#game {
 	display: grid;
 	width: 470px;
 	margin: 0 auto;
 	padding: 10px;
 }
 
-.gamegrid .card{
+.gamegrid .card {
 	margin: 5px;
 	height: 100px;
 	width: 100px;
@@ -114,12 +114,12 @@ body{
 	border-radius: 0.25rem;
 }
 
-.gamegrid .cardFront, .gamegrid .cardBack{
+.gamegrid .cardFront, .gamegrid .cardBack {
 	width: 100px;
 	height: 100px;
 }
 
-.playAgainBtn{
+.playAgainBtn {
 	color: #000;
 	background: #8cc0de;
 	border-radius: 5px;
@@ -130,17 +130,17 @@ body{
 	cursor: pointer;
 }
 
-.playAgainBtn:hover{
+.playAgainBtn:hover {
 	color: #000;
 	background: #faf0dc;
 	cursor: pointer;
 }
 
-#winner{
+#winner {
 	display: none;
 }
 
-.winner{
+.winner {
 	font-family: GoodDog;
 	width: 90vw;
 	max-width: 400px;
@@ -159,7 +159,7 @@ body{
 	transform: translateY(-50%);
 }
 
-.cardFront,.cardBack{
+.cardFront,.cardBack {
 	box-sizing: border-box;
 	border-radius: 0.25rem;
 	padding-left: 0.5rem;
@@ -175,23 +175,23 @@ body{
 	transition: transform 0.5s ease;
 }
 
-.cardFront{
+.cardFront {
 	font-weight: bold;
 	font-size: 40px;
 	transform: perspective(1000px) rotateY(0deg);
 }
 
-.cardBack{
+.cardBack {
 	transform: perspective(1000px) rotateY(180deg);
 }
 
-.cardBack.flipped{
+.cardBack.flipped {
 	background: #42BAFB;
 	transform: perspective(1000px) rotateY(0deg);
 	
 }
 
-.cardFront.flipped{
+.cardFront.flipped {
 	transform: perspective(1000px) rotateY(-180deg);
 }
 
@@ -233,102 +233,102 @@ body{
 
 
 
-@media only screen and (max-width: 420px){
+@media only screen and (max-width: 420px) {
 	.gamegrid .card{
 		width: 55px;
 		height: 55px;
 	}
 
-	.gamegrid .cardFront, .gamegrid .cardBack{
+	.gamegrid .cardFront, .gamegrid .cardBack {
 		width: 55px;
 		height: 55px;
 		padding-left: 5px;
 		padding-right: 5px;
 	}
 
-	.cardBack img{
+	.cardBack img {
 		width: 48px;
 		height: 48px;
 	}
 
-	.timer, .restart, .endgame{
+	.timer, .restart, .endgame {
 		width: 120px;
 	}
 }
-@media only screen and (max-width: 416px){
+@media only screen and (max-width: 416px) {
 	.gamegrid .card{
 		width: 54px;
 		height: 54px;
 	}
 }
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 400px) {
 	.gamegrid .card{
 		width: 81px;
 		height: 81px;
 	}
-	.gamegrid .cardFront, .gamegrid .cardBack{
+	.gamegrid .cardFront, .gamegrid .cardBack {
 		width: 81px;
 		height: 81px;
 	}
-	.cardBack img{
+	.cardBack img {
 		width: 76px;
 		height: 76px;
 	}
-	.timer, .restart, .endgame{
+	.timer, .restart, .endgame {
 		width: 115px;
 	}
 }
 
-@media only screen and (max-width: 385px){
+@media only screen and (max-width: 385px) {
 	.gamegrid .card{
 		width: 80px;
 		height: 80px;
 	}
-	.gamegrid .cardFront, .gamegrid .cardBack{
+	.gamegrid .cardFront, .gamegrid .cardBack {
 		width: 80px;
 		height: 80px;
 	}
-	.cardBack img{
+	.cardBack img {
 		width: 70px;
 		height: 70px;
 	}
-	.timer, .restart, .endgame{
+	.timer, .restart, .endgame {
 		width: 110px;
 	}
 }
-@media only screen and (max-width: 380px){
+@media only screen and (max-width: 380px) {
 	#game{
 		padding: 10px 4px;
 	}
-	.gamegrid .card{
+	.gamegrid .card {
 		width: 75px;
 		height: 75px;
 	}
-	.gamegrid .cardFront, .gamegrid .cardBack{
+	.gamegrid .cardFront, .gamegrid .cardBack {
 		width: 75px;
 		height: 75px;
+	}
+	.cardBack img {
+		width: 70px;
+		height: 70px;
+	}
+}
+@media only screen and (max-width: 370px) {
+	.gamegrid .card{
+		width: 70px;
+		height: 70px;
+	}
+	.gamegrid .cardFront, .gamegrid .cardBack {
+		width: 70px;
+		height: 70px;
 	}
 	.cardBack img{
 		width: 70px;
 		height: 70px;
 	}
 }
-@media only screen and (max-width: 370px){
-	.gamegrid .card{
-		width: 70px;
-		height: 70px;
-	}
-	.gamegrid .cardFront, .gamegrid .cardBack{
-		width: 70px;
-		height: 70px;
-	}
-	.cardBack img{
-		width: 70px;
-		height: 70px;
-	}
-}
-@media only screen and (max-width: 365px){
-	.timer, .restart, .endgame{
+@media only screen and (max-width: 365px) {
+	.timer, .restart, .endgame {
 		width: 105px;
 	}
 }
