@@ -1,6 +1,6 @@
 # Fetch & Match
 
-Fetch & Match is an interactive memory game which allows users to match cards.
+Fetch & Match is an interactive memory game which allows players to match pairs of cards.
 
 To see the live version of the site click [here](https://nweying.github.io/fetch-and-match/)!
 
@@ -14,7 +14,6 @@ To see the live version of the site click [here](https://nweying.github.io/fetch
 * [Design](#Design)
   * [Colour Scheme](#Colour-Scheme)
   * [Typography](#Typography)
-  * [Imagery](#Imagery)
   * [Wireframes](#Wireframes)
 
 * [Features](#Features)
@@ -40,9 +39,6 @@ To see the live version of the site click [here](https://nweying.github.io/fetch
   * [Bugs](#Bugs--Fixes)
 
 * [Credits](#Credits)
-  * [Code Used](#Code-Used)
-  * [Content](#Content)
-  * [Media](#Media)
   * [Acknowledgments](#Acknowledgments)
 
 - - -
@@ -64,7 +60,7 @@ Fetch & Match is designed to appeal to a broad audience, including:
 * I want to easily understand how to play the game so that I can start enjoying the game without confusion.
 
 #### As a Returning User:
-* I want to quickly start a new game so that I can immediately begin matching dog cards.
+* I want to quickly start a new game so that I can immediately begin pairing cards.
 
 #### As a Competitive Player:
 * I want to see a timer that tracks my game completion time so that I can challenge myself to improve my speed.
@@ -155,11 +151,7 @@ The website adheres to accessibility guidelines, ensuring it is responsive and i
 
 - Google Dev Tools - To test and troubleshoot features, and assist with responsiveness and styling.
 
-- [Adobe Express](https://www.adobe.com/express/) To resize images.
-
-- [Am I Responsive?](http://ami.responsivedesign.is/) To show the website images on a range of devices.
-
-- [Freepik](https://www.freepik.com/) and [Vectezzy](https://www.vecteezy.com/) For all images used in website.
+- JQuery - To manipulate the DOM and add event handlers.
 
 - - -
 
@@ -215,7 +207,7 @@ All user stories have been thoroughly tested and validated for functionality and
     
 -   #### Returning User Goals
 
-    * I want to quickly start a new game so that I can immediately begin matching dog cards.
+    * I want to quickly start a new game so that I can immediately begin pairing cards.
 
         When the user visits the home page, they can click the 'New Game' button to start a new game instantly displaying the game board with hidden cards.
 
@@ -245,7 +237,74 @@ All user stories have been thoroughly tested and validated for functionality and
         
         ![Game Completion Screenshot](assets/readme-images/game-completion-screenshot.png)
 
+### W3C Validator
+
+The W3C Markup Validator, W3C CSS Validator Services and JSHint were used to validate every page of the project to ensure there were no syntax errors in the project.
+
+### HTML Validation
+ <details><summary>index.html</summary>
+<img src="assets/readme-images/index.html-validation.png">
+</details>
+
+### CSS Validation
+<details><summary>style.css</summary>
+<img src="assets/readme-images/style.css-validation.png">
+</details>
+
+### JavaScript Validation
+<details><summary>script.js</summary>
+<img src="assets/readme-images/script.js-validation.png">
+</details>
+
+No errors found.
+
+### Lighthouse
+
+Lighthouse within Chrome Developer Tools was used to test performance on desktop and mobile.
+
+<details><summary>Desktop</summary>
+<img src="assets/readme-images/lighthouse-desktop.png">
+</details>
+
+<details><summary>Mobile</summary>
+<img src="assets/readme-images/lighthouse-mobile.png">
+</details>
+
+### Browser Compatability & Responsiveness
+
+The website was tested on the following browsers:
+
+- Google Chrome
+- Mozilla Firefox
+- Microsoft Egde
+- Safari
+
+The website underwent thorough responsiveness testing using Google Dev Tools across various screen sizes. 
+
+## Bugs & Fixes
+
+| **Bug** | **Fix** |
+| ----------- | ----------- |
+| Card images not appearing on deployed site | Corrected relative file path to ensure proper image display |
+| Vertical scroll appearing at the right side of all pages | Set overflow to hidden in CSS |
+| White space appearing at the bottom of the screen | Fix height adjustment of div in CSS |
+| Total time not displaying on pop up messsage | Ensure that 'totalSeconds' is properly passed to the 'finalSeconds' element within the pop-up message |
+
 - - -
 
+## Credits
 
+- [Stack Overflow](https://stackoverflow.com/) To help with debugging.
+- [W3Schools](https://www.w3schools.com/howto/howto_css_flip_card.asp) To create a flip card.
+- [Adobe Express](https://www.adobe.com/express/) To resize images.
+- [Am I Responsive?](http://ami.responsivedesign.is/) To show the website images on a range of devices.
+- [Freepik](https://www.freepik.com/) and [Vectezzy](https://www.vecteezy.com/) For all images used in website.
 
+### Acknowledgements
+I would like to thank:
+- My mentor Mitko for his guidance and feedback.
+- My Cohort Facilitator Kristyna for the tips and support.
+- To Tutor Support and Student Care for prompt support on any issues I faced.
+- To the CI Slack Community for advice and recommendations.
+
+- - -
