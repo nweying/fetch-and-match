@@ -188,3 +188,140 @@ body{
 	transform: perspective(1000px) rotateY(-180deg);
 }
 
+@media only screen and (max-width: 450px)
+{
+	.header h1
+	{
+		font-size: 40px;
+	}
+	#timerrestartendgame
+	{
+		width: 100%;
+	}
+	#game
+	{
+		width: 100%;
+		padding: 10px 0;
+	}
+	.gamegrid .card
+	{
+		width: 57px;
+		height: 57px;
+	}
+	.gamegrid .cardFront, .gamegrid .cardBack
+	{
+		width: 58px;
+		height: 58px;
+	}
+	.cardBack img
+	{
+		width: 50px;
+		height: 50px;
+	}
+	.timer
+	{
+		width: 125px;
+	}
+}
+
+
+
+@media only screen and (max-width: 420px){
+	.gamegrid .card{
+		width: 55px;
+		height: 55px;
+	}
+
+	.gamegrid .cardFront, .gamegrid .cardBack{
+		width: 55px;
+		height: 55px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	.cardBack img{
+		width: 48px;
+		height: 48px;
+	}
+
+	.timer, .restart, .endgame{
+		width: 120px;
+	}
+}
+@media only screen and (max-width: 416px){
+	.gamegrid .card{
+		width: 54px;
+		height: 54px;
+	}
+}
+@media only screen and (max-width: 400px){
+	.gamegrid .card{
+		width: 81px;
+		height: 81px;
+	}
+	.gamegrid .cardFront, .gamegrid .cardBack{
+		width: 81px;
+		height: 81px;
+	}
+	.cardBack img{
+		width: 76px;
+		height: 76px;
+	}
+	.timer, .restart, .endgame{
+		width: 115px;
+	}
+}
+
+@media only screen and (max-width: 385px){
+	.gamegrid .card{
+		width: 80px;
+		height: 80px;
+	}
+	.gamegrid .cardFront, .gamegrid .cardBack{
+		width: 80px;
+		height: 80px;
+	}
+	.cardBack img{
+		width: 70px;
+		height: 70px;
+	}
+	.timer, .restart, .endgame{
+		width: 110px;
+	}
+}
+@media only screen and (max-width: 380px){
+	#game{
+		padding: 10px 4px;
+	}
+	.gamegrid .card{
+		width: 75px;
+		height: 75px;
+	}
+	.gamegrid .cardFront, .gamegrid .cardBack{
+		width: 75px;
+		height: 75px;
+	}
+	.cardBack img{
+		width: 70px;
+		height: 70px;
+	}
+}
+@media only screen and (max-width: 370px){
+	.gamegrid .card{
+		width: 70px;
+		height: 70px;
+	}
+	.gamegrid .cardFront, .gamegrid .cardBack{
+		width: 70px;
+		height: 70px;
+	}
+	.cardBack img{
+		width: 70px;
+		height: 70px;
+	}
+}
+@media only screen and (max-width: 365px){
+	.timer, .restart, .endgame{
+		width: 105px;
+	}
+}
