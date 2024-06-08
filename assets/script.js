@@ -93,6 +93,7 @@ function showDog(cid){
 					clearInterval(timer); // Clear the timer countdown
 					setTimeout(function(){
 						$("#winner").css("display","block"); // Display the winner popup message
+						$("#finalSeconds").text(totalSeconds);// Display total seconds taken to complete this game
 					},800);
 				}
 				setTimeout(function(){
