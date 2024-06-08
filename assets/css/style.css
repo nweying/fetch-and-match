@@ -7,6 +7,7 @@ body {
 	margin: 0;
 	background: #faf0d7;
 	font-family: Helvetica, Arial, sans-serif;
+	overflow: hidden;
 }
 
 .wrapper{

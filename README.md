@@ -4,7 +4,7 @@ Fetch & Match is an interactive memory game which allows users to match cards.
 
 To see the live version of the site click [here](https://nweying.github.io/fetch-and-match/)!
 
-![The Fetch & Match Website shown on a range of devices](assets/readme-images/poshpawpy-responsive.png)
+![The Fetch & Match Website shown on a range of devices](assets/readme-images/fetch&match-responsive.png)
 
 ## CONTENTS
 
@@ -62,19 +62,18 @@ Fetch & Match is designed to appeal to a broad audience, including:
 
 #### As a New User:
 * I want to easily understand how to play the game so that I can start enjoying the game without confusion.
-* When I visit the home page, I see a 'How to Play' button that provides a clear and concise guide on playing the memory game.
 
 #### As a Returning User:
 * I want to quickly start a new game so that I can immediately begin matching dog cards.
-* When I visit the home page, I can click the 'New Game' button to start a new game instantly.
 
 #### As a Competitive Player:
 * I want to see a timer that tracks my game completion time so that I can challenge myself to improve my speed.
-* During the game, I see a timer at the top of the page that starts counting as soon as the game begins and stops when all pairs are matched.
 
 #### As a User Who Made a Mistake:
 * I want to restart the game without going back to the home page so that I can quickly correct my mistakes and try again.
-*  On the game page, I can click the 'Restart' button to reset the game and timer instantly.
+
+#### As a User Who Finished the Game:
+* I want to see my completion time once I pair all the cards so that I can know how long it took me to finish the game.
 
 - - -
 
@@ -181,7 +180,7 @@ Github Pages was used to deploy the live website. The instructions to achieve th
 
 #### How to Fork
 
-To fork the Posh Pawpy repository:
+To fork the Fetch & Match repository:
 
 1. Log in (or sign up) to Github.
 2. Go to the repository for this project, [Fetch & Match Github](https://github.com/nweying/fetch-and-match).
@@ -189,7 +188,7 @@ To fork the Posh Pawpy repository:
 
 #### How to Clone
 
-To clone the Posh Pawpy repository:
+To clone the Fetch & Match repository:
 
 1. Log in (or sign up) to GitHub.
 2. Go to the repository for this project, [Fetch & Match Github](https://github.com/nweying/fetch-and-match).
@@ -210,26 +209,43 @@ All user stories have been thoroughly tested and validated for functionality and
 
     * I want to easily understand how to play the game so that I can start enjoying the game without confusion.
 
-        Upon entering the site, users can immediately see a hero section featuring a welcoming message and a hero image, offering an initial glimpse into the business. Directly below, users encounter a distinctive logo presentation and an "About Us" section, facilitating a deeper understanding of the business's nature and ethos.
+        When the user visits the home page, they will see a 'How to Play' button that provides a guide on playing the memory game.
 
-        ![Hero and About Us Screenshot](assets/readme-images/hero-about-us-screenshot.png)
+        ![How to Play Screenshot](assets/readme-images/howtoplay-screenshot.png)
     
 -   #### Returning User Goals
 
-    * As a first time visitor, I want to easily navigate through the website to find essential information such as contact details and location.
+    * I want to quickly start a new game so that I can immediately begin matching dog cards.
 
-        1. The navigation bar fixed at the top of each page allows first-time visitors to easily explore different sections of the website. Contact details and operating hours are conveniently located in the footer section on every page for quick access.
+        When the user visits the home page, they can click the 'New Game' button to start a new game instantly displaying the game board with hidden cards.
 
-        ![Navbar Screenshot](assets/readme-images/navbar-screenshot.png)
-
-        ![Footer Screenshot](assets/readme-images/footer-screenshot.png)
+        ![New Game Screenshot](assets/readme-images/homepage-screenshot.png)
 
 -   #### Competitive Player Goals
 
-    3. As a first time visitor, I want to learn about the services offered by Posh Pawpy.
+    * I want to see a timer that tracks my game completion time so that I can challenge myself to improve my speed.
 
-        1. Upon selecting the "Services" page from the navigation bar, users are directed to a page displaying the services available, along with a clear pricing structure presented in a table format for enhanced readability.
+       During the game, the user can see a timer at the top of the page that starts counting as soon as the game begins and stops when all pairs are matched.
 
-        ![Services Screenshot](assets/readme-images/services-screenshot.png)
+        ![Game Page Screenshot](assets/readme-images/timer-gamepage-screenshot.png)
 
--   #### Goals of a User Who made a
+-   #### Goals of a User Who made a Mistake
+
+    * I want to restart the game without going back to the home page so that I can quickly correct my mistakes and try again.
+
+      On the game page, the user can click the 'Restart' button to reset the game and timer instantly.
+        
+        ![Game Page Screenshot](assets/readme-images/restart-gamepage-screenshot.png)
+
+-   #### Goals of a User Who Finished the Game
+
+    * I want to see my completion time once I pair all the cards so that I can know how long it took me to finish the game.
+
+      A pop-up appears displaying the completion time, and the user can close the pop-up and return to the home page by clicking 'OK.'
+        
+        ![Game Completion Screenshot](assets/readme-images/game-completion-screenshot.png)
+
+- - -
+
+
+
