@@ -9,6 +9,10 @@ body {
 	font-family: Helvetica, Arial, sans-serif;
 }
 
+.wrapper{
+	min-height: 100vh;
+  }
+
 .homeScreen {
 	position: relative;
 	margin: 10% auto;
@@ -45,8 +49,9 @@ body {
 	cursor: pointer;
 }
 
-.newGameBtn:hover, .howToPlayBtn:hover, .goBackToHomeBtn:hover {
+.newGameBtn:hover, .howToPlayBtn:hover, .goBackToHomeBtn:hover, #restartGameBtn:hover, #endGameBtn:hover {
 	background: #f4bfbf;
+
 }
 
 .playgame {
@@ -212,25 +217,24 @@ body {
 	}
 	.gamegrid .card
 	{
-		width: 57px;
-		height: 57px;
+		width: 90px;
+		height: 90px;
 	}
 	.gamegrid .cardFront, .gamegrid .cardBack
 	{
-		width: 58px;
-		height: 58px;
+		width: 90px;
+		height: 90px;
 	}
 	.cardBack img
 	{
-		width: 50px;
-		height: 50px;
+		width: 80px;
+		height: 80px;
 	}
 	.timer
 	{
 		width: 125px;
 	}
 }
-
 
 
 @media only screen and (max-width: 420px) {
@@ -255,10 +259,26 @@ body {
 		width: 120px;
 	}
 }
-@media only screen and (max-width: 416px) {
+@media only screen and (min-width: 412px) and (max-width: 414px) {
 	.gamegrid .card{
-		width: 54px;
-		height: 54px;
+		width: 86px;
+		height: 86px;
+	}
+
+	.gamegrid .cardFront, .gamegrid .cardBack {
+		width: 86px;
+		height: 86px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	.cardBack img {
+		width: 83px;
+		height: 83px;
+	}
+
+	.timer, .restart, .endgame {
+		width: 120px;
 	}
 }
 @media only screen and (max-width: 400px) {
