@@ -33,9 +33,9 @@ To see the live version of the site click [here](https://nweying.github.io/fetch
   * [Testing User Stories](#Testing-User-Stories-from-User-Experience-UX-Section)
   * [HTML Validation](#HTML-Validation)
   * [CSS Validation](#CSS-Validation)
-  * [JS Validation](#JS-Validation)
+  * [JavaScript Validation](#JavaScript-Validation)
   * [Lighthouse](#Lighthouse)
-  * [Browser Compatability & Responsiveness](#Browser-Compatability--Responsiveness)
+  * [Browser Compatibility & Responsiveness](#Browser-Compatibility--Responsiveness)
   * [Bugs](#Bugs--Fixes)
 
 * [Credits](#Credits)
@@ -270,7 +270,7 @@ Lighthouse within Chrome Developer Tools was used to test performance on desktop
 <img src="assets/readme-images/lighthouse-mobile.png">
 </details>
 
-### Browser Compatability & Responsiveness
+### Browser Compatibility & Responsiveness
 
 The website was tested on the following browsers:
 
